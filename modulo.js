@@ -8,14 +8,13 @@ function alerta(){
 
 function change_color(){
     var contenedor = document.getElementById("blog-post_container");
-    var color_continer_html = document.getElementById("colores_rgb");
     var color_continer = "rgb(";
     color_continer = color_continer + (Math.random()*255).toFixed(2) + ","; 
     color_continer = color_continer + (Math.random()*255).toFixed(2) + ",";
     color_continer = color_continer + (Math.random()*255).toFixed(2) + ")";
     
     contenedor.style.color = color_continer;
-    color_continer_html.innerHTML = color_continer;
+    
     
 }
 
